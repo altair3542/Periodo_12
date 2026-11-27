@@ -27,13 +27,19 @@
   <header>
     <h1>Aula Abierta</h1>
     <p>Aprende a crear para la Web.</p>
+    <nav aria-label="catalogo">
+      <ul>
+        <li><a href="#web-basica">Programacion web basica</a></li>
+        <li><a href="#escritura">Curso de escritura</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section id="cursos">
       <h2>Curso destacado</h2>
       <article>
-        <h3>Programación web básica</h3>
+        <h3 id="web-basica">Programación web básica</h3>
         <p>Construye tu primera página con HTML y CSS.</p>
 
         <p><strong>Requisito:</strong> trae un navegador actualizado. Puedes empezar <em>sin</em> experiencia previa.</p>
@@ -59,16 +65,47 @@
           <dd>Una ficha de lectura.</dd>
         </dl>
         <figure>
-          <img src="imagenes/mapa.png" width="640" heigth="280" alt="index.html esta junto a la carpeta imagenes que contiene mapa.png">
+          <a href="recursos/mapa.html">
+            <img src="imagenes/map_icono.jpg" width="640" heigth="280" alt="index.html esta junto a la carpeta imagenes que contiene mapa.png">
+          </a>
 
-          <figcaption>Orgnizacion de los archivos del proyecto.</figcaption>
         </figure>
       </article>
 
       <article>
-        <h3>Escritura para la Web</h3>
+        <h3 id="escritura">Escritura para la Web</h3>
         <p>Convierte un texto extenso en una página fácil de recorrer.</p>
       </article>
+
+      <section id="comparar">
+        <h2>Compara los cursos</h2>
+        <table>
+          <caption>Qué crearás y que herramienta usarás en cada curso.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Curso</th>
+              <th scope="col">Producto Final</th>
+              <th scope="col">Herramienta principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <a href="#web-basica"></a>
+              </th>
+              <td>Una Página con HTML y CSS</td>
+              <td>Editor de codígo</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <a href="#escritura"></a>
+              </th>
+              <td>una ficha de lectura</td>
+              <td>Editor de texto</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </section>
 
     <section id="academia">
